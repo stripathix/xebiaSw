@@ -10,7 +10,7 @@
         return self;
     }
     angular.module("xebiaSwApp").component("planetCard", {
-        templateUrl: "xebiaSw/component/planet/planet.html",
+        templateUrl: "component/planet/planet.html",
         bindings: {
             planet: "="
         },

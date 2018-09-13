@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Star Wars Assignment",
   "scripts": {
-    "dev": "lite-server"
+    "dev": "lite-server",
+    "start": "npm run dev"
   },
   "repository": {
     "type": "git",
@@ -16,9 +17,9 @@
   },
   "homepage": "https://github.com/stripathix/xebiaSw#readme",
   "devDependencies": {
-    "lite-server": "2.4.0"
   },
   "dependencies": {
-    "angular-ui-bootstrap": "^2.5.6"
+    "angular-ui-bootstrap": "^2.5.6",
+    "lite-server": "2.4.0"
   }
 }

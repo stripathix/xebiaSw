@@ -9,7 +9,7 @@
         return self;
     }
     angular.module("xebiaSwApp").component("planetDetails", {
-        templateUrl: "xebiaSw/component/planetDetails/planetDetails.html",
+        templateUrl: "component/planetDetails/planetDetails.html",
         bindings: {
             planet: "="
         },
