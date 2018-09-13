@@ -1,0 +1,19 @@
+<div class="main-container" ng-controller="dashboardCtrl as dashboardCtrl">
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon1">Search Planets</span>
+      </div>
+      <input type="text" class="form-control" ng-model-options="{ debounce: 200 }" ng-model="dashboardCtrl.planetSearchParam" ng-change='dashboardCtrl.doPlanetSearch()' placeholder="Enter planet name" aria-label="Username" aria-describedby="basic-addon1">
+    </div>
+    <planet-chart chart-api="dashboardCtrl.chartApi"></planet-chart>
+    <div ng-if="!dashboardCtrl.selectedPlanet" class="planets-list">
+      <h3>List View</h3>
+      <p ng-show="!dashboardCtrl.allPlanets && !dashboardCtrl.selectedPlanet">Search for planet to display results</p>
+      <div class="row">
+        <div class="col-12 col-md-3 col-sm-3 col-lg-3 col-xl-4" ng-repeat="planet in dashboardCtrl.allPlanets">
+            <planet-card ng-click="dashboardCtrl.selectPlanet(planet)"  planet="planet" ></planet-card>
+        </div>
+      </div>
+  </div>
+  <planet-details ng-if="dashboardCtrl.selectedPlanet" planet="dashboardCtrl.selectedPlanet"></planet-details>
+</div>

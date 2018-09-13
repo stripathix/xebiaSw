@@ -1,0 +1,25 @@
+{
+  "name": "xebiasw",
+  "version": "1.0.0",
+  "description": "Star Wars Assignment",
+  "main": "index.js",
+  "scripts": {
+    "dev": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stripathix/xebiaSw.git"
+  },
+  "author": "Shashwat Tripathi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stripathix/xebiaSw/issues"
+  },
+  "homepage": "https://github.com/stripathix/xebiaSw#readme",
+  "devDependencies": {
+    "lite-server": "2.4.0"
+  },
+  "dependencies": {
+    "angular-ui-bootstrap": "^2.5.6"
+  }
+}

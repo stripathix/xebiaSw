@@ -1,0 +1,89 @@
+body,
+  html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: #000;
+  }
+.header-links{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: #fff;
+}
+.header-links .btn-link{
+  color: #fff;
+}
+.non-link{
+  pointer-events: none;
+}
+.error-message {
+    color: #D8000C;
+    font-size: 12px;
+}
+.header{
+  text-align: center;
+}
+.header img{
+  width: 200px;
+}
+.main-container{
+  margin: 10px;
+}
+.planets-list{
+  padding: 10px;
+  background: #fff;
+  border-radius: 6px;
+}
+.planet-info li{
+  padding: 4px;
+  font-size: 14px;
+}
+.card{
+  box-shadow: 0 4px 16px rgba(0,0,0,.12);
+}
+svg {
+      background-color: black;
+    }
+
+    .bounding-box {
+      fill: white;
+      fill-opacity: 0;
+      stroke: #fff;
+      stroke-opacity: 0.5;
+      stroke-dasharray: 3,3;
+    }
+
+    .label {
+      font-family: monospace;
+      opacity: 1;
+      font-size: 10px;
+      fill: #fff;
+    }
+
+    .info {
+      font-family: monospace;
+      opacity: 1;
+      font-size: 8px;
+      fill: #fff;
+    }
+
+    .planet circle, .graticule {
+      fill: none;
+      stroke: #123;
+      stroke-opacity: 0.15;
+    }
+
+    .planet circle {
+      stroke-width: 1px;
+    }
+
+    .axis-line {
+      stroke: #fff;
+      stroke-opacity: 0.3;
+    }
+
+    .star {
+      fill: white;
+      opacity: 1;
+    }

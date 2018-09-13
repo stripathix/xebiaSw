@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="xebiaSwApp">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="fragment" content="!">
+    <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#32db64">
+    <title>Star Wars</title>
+    <base href="/">
+    <!-- inject:css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- endinject -->
+</head>
+
+<body ng-cloak class="body_class" ng-controller="MainController as MainCtrl">
+  <div class="header">
+      <div class="header-links" ng-if="MainCtrl.userObj">
+          <button type="button" class="btn btn-link non-link">Welcome, {{MainCtrl.userObj.username}}</button> |
+          <button type="button" class="btn btn-link" ng-click="MainCtrl.logout()">Logout</button>
+      </div>
+      <div>
+          <img src="http://cdn2.gamedots.mx/media/gd/styles/gallerie/public/images/2016/12/starwarslogohistoria.jpg" />
+      </div>
+  </div>
+
+<div ui-view="content" class="mainContent">
+</div>
+</body>
+<!-- inject:js -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.3/angular-ui-router.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-aria.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-messages.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.js"></script>
+<script src="common/app.module.js"></script>
+<script src="common/app.route.js"></script>
+<script src="common/constant/app.constant.js"></script>
+<script src="common/controller/main.controller.js"></script>
+<script src="common/service/http.service.js"></script>
+<script src="component/login/login.controller.js"></script>
+<script src="component/login/login.service.js"></script>
+<script src="component/dashboard/dashboard.service.js"></script>
+<script src="component/dashboard/dashboard.controller.js"></script>
+<script src="component/planet/planet.component.js"></script>
+<script src="component/planetDetails/planetDetails.component.js"></script>
+<script src="component/planetDetails/planetChart.directive.js"></script>
+<!-- endinject -->
+</html>
