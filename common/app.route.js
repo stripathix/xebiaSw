@@ -11,7 +11,7 @@
                 url: "/dashboard",
                 views: {
                     content: {
-                        templateUrl: "component/dashboard/dashboard.html"
+                        templateUrl: "xebiaSw/component/dashboard/dashboard.html"
                     }
                 }
             })
@@ -19,7 +19,7 @@
                 url: "/login",
                 views: {
                     "content": {
-                        templateUrl: "component/login/login.html"
+                        templateUrl: "xebiaSw/component/login/login.html"
                     }
                 }
             });
