@@ -1,0 +1,22 @@
+{
+  "name": "xebiasw",
+  "version": "1.0.0",
+  "description": "Star Wars Assignment",
+  "scripts": {
+    "dev": "lite-server",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stripathix/xebiaSw.git"
+  },
+  "author": "Shashwat Tripathi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stripathix/xebiaSw/issues"
+  },
+  "homepage": "https://github.com/stripathix/xebiaSw#readme",
+  "dependencies": {
+    "express": "4.16.3"
+  }
+}
